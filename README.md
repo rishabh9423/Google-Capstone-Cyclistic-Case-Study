@@ -16,6 +16,49 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 **2. How can we convert casual riders into annual members?**
 
 
+## Dataset
+Dataset included the following columns:
+1. ride_id: A unique ID is generated for each ride.
+2. rideable_type: Type of ride used. (This particular dataset included only docked_bikes)
+3. started_at: Date and time that the ride started at.
+4. ended_at: Date and time that the ride ended at.
+5. start_station_name: Name of the station where the ride was initiated.
+6. start_station_id: Unique ID of the station where the ride was initiated.
+7. end_station_name: Name of the station where the ride ended.
+8. end_station_id: Unique ID of the station where the ride was initiated.
+9. member_casual: Type of rider.
+
+### Dataset before creating the variables.
+![Screenshot 2024-09-21 135740](https://github.com/user-attachments/assets/87f7a3ad-bb85-4446-8fbd-b9866f906d31)
+
+## Analysis
+1. Created a new variable, "**duration**," to calculate the duration of each ride by subtracting the start and end times.
+2. Created a new variable, "**weekday**," to analyze ride behaviour by day.
+3. To understand the distribution of rider types, I calculated the **percentage of total rides** for members and casual riders. A pie chart was created to visually represent this breakdown.
+
+### Dataset after creating the above mentioned variables
+4. ![Screenshot 2024-09-21 135604](https://github.com/user-attachments/assets/8c263e77-098f-4448-96eb-b8ba550bd272)
+
+5. To compare the ride durations of members and casual riders, I calculated the average duration for each group and visualized the difference using a bar chart.
+6. Used a pivot table to:
+     a. Analyze ride counts by day of the week and rider type.
+     b. Examine average ride durations by day of the week and rider type.
+7. Pie chart visualizing the distribution of members and casual riders.
+   
+   ![Screenshot 2024-09-21 140242](https://github.com/user-attachments/assets/1273a500-5536-4ed9-a80d-1422513b9ea3)
+9. Bar chart visualizing the average ride duration of members and casual riders.
+    
+    ![Screenshot 2024-09-21 140311](https://github.com/user-attachments/assets/f4234a1b-8eee-4307-bf40-6409a0fba66c)
+11. Bar chart visualizing the average ride duration of members and casual riders by day of the week.
+    
+    ![Screenshot 2024-09-21 140355](https://github.com/user-attachments/assets/61bf906c-f37e-48d8-968f-98635cc30f1a)
+13. Bar chart visualizing the number of rides of members and casual riders by day of the week.
+    ![Screenshot 2024-09-21 140426](https://github.com/user-attachments/assets/09e92d75-37f9-48e8-bc3c-b36194a7fa09)
+
+
+
+
+
 ## Findings
 1. Majority of riders are **members**.
 2. **72.1%** riders are annual members
